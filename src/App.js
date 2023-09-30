@@ -129,7 +129,8 @@ function App() {
       {/* {mostrarFormulario === true ? <Formulario/> : <></>} */}
       { mostrarFormulario && <Formulario equipos={equipos.map((equipo) => equipo.titulo)} 
         registrar ={registrarColaborador}
-        crearEquipo = {crearEquipo}/>
+        crearEquipo = {crearEquipo}
+        uuidv4 = {uuidv4}/>
       }
       <MiOrg cambiarMostrar={cambiarMostrar}/>
       {

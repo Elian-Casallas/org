@@ -14,7 +14,7 @@ const Formulario = (props) =>{
     const [titulo, actualizarTitulo] = useState("");
     const [color, actualizarColor] = useState("");
 
-    const {registrar, equipos, crearEquipo} = props;
+    const {registrar, equipos, crearEquipo, uuidv4} = props;
 
     const manejarEnvio = (evento) => {
         evento.preventDefault();
@@ -22,7 +22,8 @@ const Formulario = (props) =>{
             nombre: nombre,
             puesto: puesto,
             foto: foto,
-            equipo
+            equipo,
+            id: uuidv4()
         }
         registrar(datosEnviar);
         actualizarNombre("");

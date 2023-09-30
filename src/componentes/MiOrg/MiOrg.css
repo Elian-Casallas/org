@@ -13,8 +13,19 @@
     border-bottom: 4px solid #6278F7;
 }
 
-.imagen{
-    position: absolute;
-    right: 18%;
-    cursor: pointer;
+@media screen and (max-width: 823px) {
+    .imagen{
+        cursor: pointer;
+    }
+    .orgSection{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 824px) {
+    .imagen{
+        position: absolute;
+        right: 18%;
+        cursor: pointer;
+    }
 }

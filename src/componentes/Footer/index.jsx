@@ -15,7 +15,7 @@ const Footer = () => {
                 <img src="/img/instagram.png" alt="instagram"/>
             </a>
         </div>
-        <img src="/img/Logo.png" alt="instagram"/>
+        <img src="/img/Logo.png" className="orgLogo" alt="instagram"/>
         <strong>Desarrollado por Elian Casallas</strong>
     </footer>
 }
